@@ -12,13 +12,15 @@ import ds.Graph.Vertex;
 @SuppressWarnings("unused")
 public class Algo {
 
-	private HashMap<Integer, Vertex> 							vertices;
-	private HashMap<Integer, ArrayList<Waypoint>> 				pathMap;							// Maps the optimal path for any given vertex at the end of an iteration
-	private ArrayList<HashMap<Integer, ArrayList<Waypoint>>> 	results;							// Holds a list of all pathMaps 
-	private int 												rounds;
-	private double 												endTime;
-	static boolean 												loggingEnabled = false;
-	final private double 										MAX = Double.POSITIVE_INFINITY; 
+	private HashMap<Integer, Vertex> vertices;
+	// Maps the optimal path for any given vertex at the end of an iteration
+	private HashMap<Integer, ArrayList<Waypoint>> pathMap;
+	// Holds a list of all pathMaps							
+	private ArrayList<HashMap<Integer, ArrayList<Waypoint>>> results;							 
+	private int rounds;
+	private double endTime;
+	static boolean loggingEnabled = false;
+	final private double MAX = Double.POSITIVE_INFINITY; 
 	
 	// This class keeps track of each step the algorithm takes along the graph
 	private class Waypoint {

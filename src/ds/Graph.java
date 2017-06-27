@@ -23,11 +23,11 @@ public class Graph {
 	}
 	
 	public class Vertex {
-		private final int 		id;
-		private String 			mod;
-		private int 			timesVisited;
-		private double	 		speed;
-		private double 			time;
+		private final int id;
+		private String mod;
+		private int timesVisited;
+		private double speed;
+		private double time;
 		private ArrayList<Edge> edge;
 		
 		public ArrayList<Edge> getEdge() {

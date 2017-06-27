@@ -25,7 +25,6 @@ At the beginning each vertex only gets passed once, the final time for the end v
  * all vertices initialized to: time = Inf, speed = 0
  * v0: time = 0, speed = 1
  *  nMax (max times each vertex can get visited in this iteration) = 1
- * 
 
 #### Process 
 1. vertex with id = 0 gets queued
