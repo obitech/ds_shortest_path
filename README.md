@@ -12,6 +12,8 @@ The Graph is read in by arces.csv and nodes.csv, stored in the util package.
 * Passing a vertex will modify current speed according to his modification
 * Time to pass an edge = distance / current speed at vertex
 
+![A bi-directional graph with weighted edges and acceleration](https://github.com/obitech/ds_shortest_path/blob/master/graph.png "A bi-directional graph with weighted edges and acceleration")
+
 ### Algorithm
 The algorithm calculates the shortest path from 0 to 21. It uses a breadth-first search approach to dynamically adjust time & speed for all connected vertices for the currently visited node, very similar to Bellman-Ford's SP algorithm.  It optimizes for time decrease or speed improvement from a vertex to its neighbours. Additionally there is a limit of how many times a vertex can be passed each iteration. 
 
