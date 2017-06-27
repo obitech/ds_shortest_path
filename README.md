@@ -14,11 +14,13 @@ The Graph is read in by arces.csv and nodes.csv, stored in the util package.
 
 ![A bi-directional graph with weighted edges and acceleration](https://github.com/obitech/ds_shortest_path/blob/master/graph.png "A bi-directional graph with weighted edges and acceleration")
 
+### Task
+Find the path with the shortest time from 0 to 21. Travel speed can't fall below 0.
+
 ### Algorithm
 The algorithm calculates the shortest path from 0 to 21. It uses a breadth-first search approach to dynamically adjust time & speed for all connected vertices for the currently visited node, very similar to Bellman-Ford's SP algorithm.  It optimizes for time decrease or speed improvement from a vertex to its neighbours. Additionally there is a limit of how many times a vertex can be passed each iteration. 
 
 At the beginning each vertex only gets passed once, the final time for the end vertex will then be compared against the previous final time (Infinity for the first iteration). If time improves, we restart the algorithm but now allow each vertex to be visited one more time. This gets repeated until there is no more measurable improvement in time.
-
 
  The optimal path for each vertex is stored in the HashMap 'pathMap' and are updated dynamically. The paths for each iteration are saved in the ArrayList 'results' and can be accessed via showResult()
  
